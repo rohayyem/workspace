@@ -1,0 +1,79 @@
+package com.moe.myapp;
+
+import java.sql.Connection;
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.ResponseHandler;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.BasicResponseHandler;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.json.JSONObject;
+
+import android.database.CursorJoiner.Result;
+import android.os.AsyncTask;
+import android.util.Log;
+
+public class DatabaseService extends AsyncTask<String, Void, String> {
+
+	
+	String url = "http://maps.googleapis.com/";
+	 
+	HttpParams httpParams = new BasicHttpParams();
+	
+	HttpParams p = new BasicHttpParams();
+
+	// Instantiate an HttpClient
+	HttpClient httpclient = new DefaultHttpClient(p);
+	@Override
+	protected String doInBackground(String... arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public Connection connect(){
+		return null;
+		
+	}
+	public void getRoutes(){
+		
+		
+	
+	}
+	public void getRouteInfo(){
+		
+	}
+    public void creatRoute(){
+    	
+    	try{
+    	
+		
+		HttpPost httppost = new HttpPost(url);
+
+		// Instantiate a GET HTTP method
+		Log.i(getClass().getSimpleName(), "send  task - start");
+		
+		ResponseHandler<String> responseHandler = new BasicResponseHandler();
+		String responseBody = null;
+		
+			responseBody = httpclient.execute(httppost,
+					responseHandler);
+
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
+    public void updateRoute(){
+		
+   	}
+    public void deleteRoute(){
+		
+   	}
+   
+
+}
