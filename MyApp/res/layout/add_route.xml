@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="36dp"
+        android:text="From" />
+
+    <EditText
+        android:id="@+id/editTextFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="61dp"
+        android:ems="10"
+        android:hint="enter start address" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="107dp"
+        android:text="To" />
+
+    <EditText
+        android:id="@+id/editTextTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="130dp"
+        android:ems="10"
+        android:hint="enter destination address" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="51dp"
+        android:layout_y="178dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="233dp"
+        android:text="Time" />
+    
+    <TextView
+        android:id="@+id/textViewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="355dp"
+        android:text="Capacity of Vehicle" />
+
+    <EditText
+        android:id="@+id/editTextCapacity"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_x="151dp"
+        android:layout_y="345dp"
+        android:ems="10"
+        android:hint="enter number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_x="23dp"
+        android:layout_y="396dp"
+        android:onClick="viewRoute_click"
+        android:text="View" />
+
+</AbsoluteLayout>
