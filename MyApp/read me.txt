@@ -1,0 +1,16 @@
+Mobile Carpooling Application
+Advanced Software Paradigms-Project
+Mohammed Rohayyem & Alex Prairie
+
+How To Run The Application:
+
+1)Install Apache Tomcat 7.0 on a server machine.
+
+2)Import and Deploy CarpoolingProject to Tomcat using Eclipse.
+
+3)Make sure to disable firewall or add exception to allow external request to access the port needed(8080).
+
+4)Import MyApp & google-play-services_lib to Eclipse ADT version and modify the IP Adress of the server machine at MyApp DatabaseService.java to reflect the correct IP adress.
+
+5)Export The CarpoolingApp to an .apk and deploy to an Android Phone and install it.
+6)Both Android Phone and Server need to be on the same network.
